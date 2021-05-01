@@ -7,7 +7,7 @@ author        = "smallgram"
 description   = "mandelbrot set implementation in nim with html5 canvas backend"
 license       = "MIT"
 srcDir        = "src"
-bin           = @["mandelbrot_nim_js.js"]
+namedBin      = {"mandelbrot_nim_js": "mb.js"}.toTable()
 binDir        = "bin"
 
 backend       = "js"
